@@ -19,7 +19,7 @@
 
 async function getQuestion(){
 
-const res = await fetch("http://localhost:5000/api/interview/question")
+const res = await fetch("https://mern-1-6oh5.onrender.com/api/interview/question")
 
 const data = await res.json()
 
@@ -34,7 +34,7 @@ const question = document.getElementById("question").innerText
 
 const answer = document.getElementById("answer").value
 
-const res = await fetch("http://localhost:5000/api/interview/evaluate",{
+const res = await fetch("https://mern-1-6oh5.onrender.com/api/interview/evaluate", {
 
 method:"POST",
 
@@ -58,5 +58,6 @@ document.getElementById("result").innerText = data.result
 </script>
 
 </body>
+
 
 </html>
